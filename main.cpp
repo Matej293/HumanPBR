@@ -7,10 +7,10 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "model.h"
-#include "camera.h"
-#include "shader.h"
-#include "utils.h"
+#include "./Headers/model.h"
+#include "./Headers/camera.h"
+#include "./Headers/shader.h"
+#include "./Headers/utils.h"
 
 namespace fs = std::filesystem;
 
@@ -30,13 +30,13 @@ int main()
 	// enable seamless cubemap sampling for lower mip levels in the pre-filter map.
 	glEnable(GL_TEXTURE_CUBE_MAP_SEAMLESS);
 
-	Shader pbrShader("pbr.vs", "pbr.fs");
-	Shader lensShader("lens.vs", "lens.fs");
-	Shader equirectangularToCubemapShader("cubemap.vs", "equirectangular_to_cubemap.fs");
-	Shader irradianceShader("cubemap.vs", "irradiance_convolution.fs");
-	Shader prefilterShader("cubemap.vs", "prefilter.fs");
-	Shader brdfShader("brdf.vs", "brdf.fs");
-	Shader backgroundShader("background.vs", "background.fs");
+	Shader pbrShader("./Shaders/pbr.vs", "./Shaders/pbr.fs");
+	Shader lensShader("./Shaders/lens.vs", "./Shaders/lens.fs");
+	Shader equirectangularToCubemapShader("./Shaders/cubemap.vs", "./Shaders/equirectangular_to_cubemap.fs");
+	Shader irradianceShader("./Shaders/cubemap.vs", "./Shaders/irradiance_convolution.fs");
+	Shader prefilterShader("./Shaders/cubemap.vs", "./Shaders/prefilter.fs");
+	Shader brdfShader("./Shaders/brdf.vs", "./Shaders/brdf.fs");
+	Shader backgroundShader("./Shaders/background.vs", "./Shaders/background.fs");
 
 	setupShaders(pbrShader, backgroundShader);
 

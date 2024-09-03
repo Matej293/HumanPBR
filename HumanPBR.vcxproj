@@ -156,25 +156,26 @@
     <ClCompile Include="stb.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="model.h" />
-    <ClInclude Include="shader.h" />
-    <ClInclude Include="utils.h" />
+    <ClInclude Include="Headers\camera.h" />
+    <ClInclude Include="Headers\mesh.h" />
+    <ClInclude Include="Headers\model.h" />
+    <ClInclude Include="Headers\shader.h" />
+    <ClInclude Include="Headers\utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="background.fs" />
-    <None Include="background.vs" />
-    <None Include="brdf.fs" />
-    <None Include="brdf.vs" />
-    <None Include="cubemap.vs" />
-    <None Include="equirectangular_to_cubemap.fs" />
-    <None Include="irradiance_convolution.fs" />
-    <None Include="pbr.fs" />
-    <None Include="pbr.vs" />
-    <None Include="prefilter.fs" />
-    <None Include="lens.fs" />
-    <None Include="lens.vs" />
+    <None Include="Shaders\background.fs" />
+    <None Include="Shaders\background.vs" />
+    <None Include="Shaders\brdf.fs" />
+    <None Include="Shaders\brdf.vs" />
+    <None Include="Shaders\cubemap.vs" />
+    <None Include="Shaders\equirectangular_to_cubemap.fs" />
+    <None Include="Shaders\eye.fs" />
+    <None Include="Shaders\irradiance_convolution.fs" />
+    <None Include="Shaders\lens.fs" />
+    <None Include="Shaders\lens.vs" />
+    <None Include="Shaders\pbr.fs" />
+    <None Include="Shaders\pbr.vs" />
+    <None Include="Shaders\prefilter.fs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

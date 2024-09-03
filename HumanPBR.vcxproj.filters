@@ -29,57 +29,60 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h">
+    <ClInclude Include="Headers\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mesh.h">
+    <ClInclude Include="Headers\model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="model.h">
+    <ClInclude Include="Headers\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shader.h">
+    <ClInclude Include="Headers\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="Headers\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="lens.fs">
+    <None Include="Shaders\equirectangular_to_cubemap.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="lens.vs">
+    <None Include="Shaders\eye.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="background.fs">
+    <None Include="Shaders\irradiance_convolution.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="background.vs">
+    <None Include="Shaders\lens.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="brdf.fs">
+    <None Include="Shaders\lens.vs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="brdf.vs">
+    <None Include="Shaders\pbr.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="cubemap.vs">
+    <None Include="Shaders\pbr.vs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="equirectangular_to_cubemap.fs">
+    <None Include="Shaders\prefilter.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="irradiance_convolution.fs">
+    <None Include="Shaders\background.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="pbr.fs">
+    <None Include="Shaders\background.vs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="pbr.vs">
+    <None Include="Shaders\brdf.fs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="prefilter.fs">
+    <None Include="Shaders\brdf.vs">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\cubemap.vs">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>
