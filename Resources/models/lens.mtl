@@ -1,0 +1,13 @@
+# Blender MTL File: 'Blender Scene.blend'
+# Material Count: 1
+
+newmtl Lens_Left
+Ns 876.776862
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.100000
+illum 6
+map_Bump Lens_Normal.jpg
