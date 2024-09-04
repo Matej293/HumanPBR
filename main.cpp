@@ -96,7 +96,7 @@ int main()
 	// load the HDR environment map
 	stbi_set_flip_vertically_on_load(true);
 	int width, height, nrComponents;
-	float* data = stbi_loadf((parentDir + "/Resources/textures/hdr/newport_loft.hdr").c_str(), &width, &height, &nrComponents, 0);
+	float* data = stbi_loadf((parentDir + "/Resources/textures/hdr/20060807_wells6_hd.hdr").c_str(), &width, &height, &nrComponents, 0);
 	unsigned int hdrTexture{};
 	if (data)
 	{
@@ -353,7 +353,7 @@ int main()
 		bindTexture({ 1, 0, 0, 0, 0, 0, 0 });
 
 		// render light source
-		unsigned int nrOfLights = 4; // max 4
+		unsigned int nrOfLights = 1; // max 4
 
 		for (unsigned int i = 0; i < nrOfLights; ++i) {
 			glm::vec3 newPos = lightPositions[i] + glm::vec3(sin(glfwGetTime() * 5.0) * 5.0, 0.0, 0.0);
